@@ -21,6 +21,8 @@
 		3C13A5D3181F817C00DF3736 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C13A5B5181F817C00DF3736 /* UIKit.framework */; };
 		3C13A5DB181F817D00DF3736 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C13A5D9181F817D00DF3736 /* InfoPlist.strings */; };
 		3C13A5DD181F817D00DF3736 /* HW4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13A5DC181F817D00DF3736 /* HW4Tests.m */; };
+		3C9DD680182162400030DDDB /* UIImage+Bubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DD67F182162400030DDDB /* UIImage+Bubble.m */; };
+		3C9DD689182211AE0030DDDB /* HW4BubbleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DD688182211AE0030DDDB /* HW4BubbleAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		3C13A5D8181F817D00DF3736 /* HW4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HW4Tests-Info.plist"; sourceTree = "<group>"; };
 		3C13A5DA181F817D00DF3736 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C13A5DC181F817D00DF3736 /* HW4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW4Tests.m; sourceTree = "<group>"; };
+		3C9DD67E182162400030DDDB /* UIImage+Bubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bubble.h"; sourceTree = "<group>"; };
+		3C9DD67F182162400030DDDB /* UIImage+Bubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bubble.m"; sourceTree = "<group>"; };
+		3C9DD687182211AE0030DDDB /* HW4BubbleAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HW4BubbleAnimator.h; sourceTree = "<group>"; };
+		3C9DD688182211AE0030DDDB /* HW4BubbleAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HW4BubbleAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 				3C13A5C3181F817C00DF3736 /* Main.storyboard */,
 				3C13A5C6181F817C00DF3736 /* HW4ViewController.h */,
 				3C13A5C7181F817C00DF3736 /* HW4ViewController.m */,
+				3C9DD687182211AE0030DDDB /* HW4BubbleAnimator.h */,
+				3C9DD688182211AE0030DDDB /* HW4BubbleAnimator.m */,
+				3C9DD67E182162400030DDDB /* UIImage+Bubble.h */,
+				3C9DD67F182162400030DDDB /* UIImage+Bubble.m */,
 				3C13A5C9181F817C00DF3736 /* Images.xcassets */,
 				3C13A5B8181F817C00DF3736 /* Supporting Files */,
 			);
@@ -250,7 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9DD680182162400030DDDB /* UIImage+Bubble.m in Sources */,
 				3C13A5C8181F817C00DF3736 /* HW4ViewController.m in Sources */,
+				3C9DD689182211AE0030DDDB /* HW4BubbleAnimator.m in Sources */,
 				3C13A5C2181F817C00DF3736 /* HW4AppDelegate.m in Sources */,
 				3C13A5BE181F817C00DF3736 /* main.m in Sources */,
 			);
@@ -461,6 +473,7 @@
 				3C13A5E2181F817D00DF3736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C13A5E3181F817D00DF3736 /* Build configuration list for PBXNativeTarget "HW4Tests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +482,7 @@
 				3C13A5E5181F817D00DF3736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

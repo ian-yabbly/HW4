@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "HW4BubbleAnimator.h"
+
 @interface HW4ViewController : UIViewController
+
+@property (nonatomic) HW4BubbleAnimator *bubbleAnimator;
+@property (nonatomic) NSMutableArray *smallBubbleAnimators;
 
 @end
