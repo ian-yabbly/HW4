@@ -12,7 +12,9 @@
 
 @interface HW4ViewController : UIViewController
 
-@property (nonatomic) HW4BubbleAnimator *bubbleAnimator;
-@property (nonatomic) NSMutableArray *smallBubbleAnimators;
+@property (nonatomic, strong) HW4BubbleAnimator *bubbleAnimator;
+@property (nonatomic, strong) NSMutableArray *smallBubbleAnimators;
+
+-(void)handleTapGesture:(UITapGestureRecognizer *)recognizer;
 
 @end

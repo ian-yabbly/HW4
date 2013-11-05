@@ -10,11 +10,19 @@
 
 @interface HW4BubbleAnimator : NSObject
 
-@property (nonatomic) NSArray *viewsToAnimate;
-@property (nonatomic) UIDynamicAnimator *dynamicAnimator;
-@property (nonatomic) UICollisionBehavior *collisionBehavior;
-@property (nonatomic) UIGravityBehavior *gravityBehavior;
+@property (nonatomic, strong) NSArray *viewsToAnimate;
+@property (nonatomic, strong) UIDynamicAnimator *dynamicAnimator;
+@property (nonatomic, strong) UICollisionBehavior *collisionBehavior;
+@property (nonatomic, strong) UIGravityBehavior *gravityBehavior;
 
--(instancetype)initWithReferenceView:(UIView *)referenceView andViewsToAnimate:(NSArray *)viewsToAnimate;
+-(instancetype)initWithReferenceView:(UIView *)referenceView
+                   andViewsToAnimate:(NSArray *)viewsToAnimate
+         withCircleCollisionBoundary:(BOOL)hasCircleCollisionBoundary;
+
+-(void)removeAnimatedView:(UIView *)viewToRemove;
+
+-(void)addViewToAnimate:(UIView *)viewToAnimate;
+
+-(void)updateView:(UIView *)viewToUpdate;
 
 @end
